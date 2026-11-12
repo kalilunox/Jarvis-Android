@@ -1,38 +1,71 @@
-# Jarvis Android Assistant
+<p align="center">
+  <img src="assets/jarvis_readme_banner.png" alt="JARVIS" width="100%">
+</p>
 
-Recovered source bundle for Jarvis 0.1.0.
+<h1 align="center">J.A.R.V.I.S.</h1>
 
-## Application information
+<p align="center">
+  <b>Ваш персональный AI-ассистент на Android</b>
+</p>
 
-- Package: com.jarvis.assistant
-- Version: 0.1.0-dev
-- Compile SDK: 34
-- Original APK: jarvis-0.1.0.apk
+<p align="center">
+  Android · Artificial Intelligence · Personal Assistant
+</p>
 
-## Structure
+---
 
-- recovered/jadx/sources/com/jarvis/
-  Decompiled Java representation of application code.
-- app/src/main/res/
-  Android resources.
-- app/src/main/assets/
-  AI models and application assets.
-- app/src/main/jniLibs/
-  Native libraries, if present.
-- app/src/main/AndroidManifest.xml
-  Decoded Android manifest.
+## О проекте
 
-## Important
+**JARVIS** — Android-проект персонального интеллектуального ассистента.
+Цель проекта — объединить взаимодействие с искусственным интеллектом
+и возможности мобильного устройства в одном приложении.
 
-This is a recovered source bundle, not yet a
-verified, buildable Android Studio project.
+Проект развивается и дополняется.
 
-JADX output may contain decompilation errors.
-Original Kotlin source, Gradle configuration,
-dependency versions and build scripts may be
-missing.
+## Скачать
 
-Original APK and untouched extraction are kept
-separately.
+<p align="center">
+  <a href="https://github.com/kalilunox/Jarvis-Android/releases/latest">
+    <img src="https://img.shields.io/badge/Download-Android%20APK-0879D1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK">
+  </a>
+</p>
 
-Verify ownership and licenses before redistribution.
+**Последняя версия:** 0.1.0
+
+- [Скачать APK](https://github.com/kalilunox/Jarvis-Android/releases/download/v0.1.0/jarvis-0.1.0.apk)
+- [Все релизы](https://github.com/kalilunox/Jarvis-Android/releases)
+
+## Установка
+
+1. Скачайте APK из раздела Releases.
+2. Откройте загруженный файл на Android-устройстве.
+3. При необходимости разрешите установку приложений из выбранного источника.
+4. Завершите установку и запустите JARVIS.
+
+## Требования
+
+- Android 10.0 или новее.
+- Устройство с поддерживаемой архитектурой приложения.
+
+## Структура проекта
+
+- `app/` — Android-приложение.
+- `app/src/main/java/` — код приложения.
+- `app/src/main/res/` — ресурсы и интерфейс.
+- `app/src/main/assets/` — внутренние ресурсы приложения.
+- `recovered/` — дополнительные материалы проекта.
+
+## Разработка
+
+JARVIS находится в активной разработке. Состав функций и возможности приложения
+могут меняться между версиями.
+
+## Автор
+
+**kalilunox**
+
+---
+
+<p align="center">
+  <b>JARVIS — Intelligence at your fingertips.</b>
+</p>
