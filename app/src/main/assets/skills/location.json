@@ -1,0 +1,11 @@
+{
+  "id": "location",
+  "name": "Местоположение",
+  "description": "Адрес, где находится телефон.",
+  "examples": [
+    "где я нахожусь"
+  ],
+  "parameters": [],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

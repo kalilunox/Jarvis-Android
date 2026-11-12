@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.jarvis.assistant'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+
+    defaultConfig {
+        applicationId 'com.jarvis.assistant'
+        minSdk 29
+        targetSdk 34
+
+        versionCode 1
+        versionName '0.1.0-dev'
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            assets.srcDirs = ['src/main/assets']
+            jniLibs.srcDirs = ['src/main/jniLibs']
+            res.srcDirs = ['src/main/res']
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+}
+
+dependencies {
+    // AndroidX Core
+    implementation 'androidx.core:core:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.activity:activity:1.8.0'
+    implementation 'androidx.fragment:fragment:1.5.4'
+
+    // Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.8.6'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.8.6'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.8.6'
+
+    // Android UI
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.preference:preference:1.2.1'
+
+    // Media
+    implementation 'androidx.media:media:1.7.0'
+
+    // Kotlin Coroutines API
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0'
+
+    // Google Play Services
+    implementation 'com.google.android.gms:play-services-base:18.5.0'
+    implementation 'com.google.android.gms:play-services-tasks:18.2.0'
+
+    // Google ML Kit OCR
+    implementation 'com.google.mlkit:text-recognition:19.0.1'
+}

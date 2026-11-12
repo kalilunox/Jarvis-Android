@@ -1,0 +1,11 @@
+{
+  "id": "agent.run",
+  "name": "Сделай сам",
+  "description": "Выполнить задачу в приложениях шаг за шагом.",
+  "examples": [
+    "сделай сам открой настройки вайфая"
+  ],
+  "parameters": [],
+  "riskLevel": "low",
+  "onlineRequired": true
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/jarvis_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="10.0dp" android:paddingBottom="28.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/jarvis_cyan" android:id="@id/btnBackToControl" android:paddingTop="4.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="← Кабинет" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ПОВТОРЯЕМЫЕ ДЕЙСТВИЯ" android:fontFamily="monospace" android:letterSpacing="0.14" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/jarvis_muted" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="Правила, которые повторяются сами." />
+        <TextView android:textSize="12.0sp" android:textColor="@color/jarvis_cyan" android:gravity="center" android:id="@id/btnCreateRoutine" android:background="@drawable/bg_hud_panel" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="14.0dp" android:text="+ НОВЫЙ ПРОТОКОЛ" android:fontFamily="monospace" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_faint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:text="АКТИВНЫЕ ПРОТОКОЛЫ" android:fontFamily="monospace" android:letterSpacing="0.12" />
+        <LinearLayout android:orientation="vertical" android:id="@id/routinesContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_hud_panel" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+            <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_faint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PREVIEW" android:fontFamily="monospace" android:letterSpacing="0.1" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/jarvis_muted" android:id="@id/routinePreview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="TRIGGER → ACTION → CONFIRM" android:lineSpacingExtra="2.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

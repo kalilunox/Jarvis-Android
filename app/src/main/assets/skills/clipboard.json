@@ -1,0 +1,12 @@
+{
+  "id": "clipboard",
+  "name": "Буфер обмена",
+  "description": "Читает или записывает текст в буфер обмена.",
+  "examples": ["что в буфере", "скопируй привет", "вставь из буфера"],
+  "parameters": [
+    {"name": "action", "description": "get или set", "type": "enum", "required": true, "allowedValues": ["get", "set"]},
+    {"name": "text", "description": "Текст для set", "type": "string", "required": false}
+  ],
+  "riskLevel": "safe",
+  "onlineRequired": false
+}

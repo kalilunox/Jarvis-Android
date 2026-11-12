@@ -1,0 +1,26 @@
+{
+  "id": "ui.type",
+  "name": "Ввод текста",
+  "description": "Вводит текст в поле ввода на экране. Если query задан — сначала ищет поле, иначе пишет в сфокусированное.",
+  "examples": [
+    "напиши что я выезжаю",
+    "введи пароль",
+    "напечатай привет в поле сообщения"
+  ],
+  "parameters": [
+    {
+      "name": "text",
+      "description": "Текст для ввода",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "query",
+      "description": "Подпись или hint поля (опционально)",
+      "type": "string",
+      "required": false
+    }
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

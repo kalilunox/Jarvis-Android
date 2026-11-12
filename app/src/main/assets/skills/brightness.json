@@ -1,0 +1,30 @@
+{
+  "id": "display.brightness",
+  "name": "Яркость экрана",
+  "description": "Изменяет яркость экрана устройства. Используй, когда пользователь просит сделать экран ярче, тусклее, темнее, увеличить/уменьшить яркость.",
+  "examples": [
+    "сделай ярче",
+    "экран темнее",
+    "прибавь яркость",
+    "максимальная яркость",
+    "сделай экран поярче",
+    "тусклый экран"
+  ],
+  "parameters": [
+    {
+      "name": "direction",
+      "description": "up — ярче, down — тусклее, max — максимальная",
+      "type": "enum",
+      "required": true,
+      "allowedValues": ["up", "down", "max", "set"]
+    },
+    {
+      "name": "percent",
+      "description": "целевая яркость в процентах (0-100) для direction=set",
+      "type": "integer",
+      "required": false
+    }
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

@@ -1,0 +1,27 @@
+{
+  "id": "sms.send",
+  "name": "Отправить SMS",
+  "description": "Отправляет текстовое сообщение указанному контакту. Используй, когда пользователь просит отправить SMS, сообщение, написать кому-то.",
+  "examples": [
+    "отправь SMS маме",
+    "напиши сообщение Ивану",
+    "отправь смс с текстом привет",
+    "напомни Ивану про встречу через SMS"
+  ],
+  "parameters": [
+    {
+      "name": "recipient",
+      "description": "Имя контакта или номер телефона получателя.",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "text",
+      "description": "Текст сообщения.",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

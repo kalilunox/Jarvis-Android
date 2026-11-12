@@ -1,0 +1,13 @@
+{
+  "id": "camera",
+  "name": "Камера",
+  "description": "Открыть камеру для фото или видео.",
+  "examples": [
+    "сфотографируй",
+    "сделай селфи",
+    "сними видео"
+  ],
+  "parameters": [],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

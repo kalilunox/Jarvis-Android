@@ -1,0 +1,21 @@
+{
+  "id": "ui.swipe",
+  "name": "Свайп",
+  "description": "Свайп по экрану вверх, вниз, влево или вправо для прокрутки списка.",
+  "examples": [
+    "пролистай вниз",
+    "свайпни вверх",
+    "прокрути ленту"
+  ],
+  "parameters": [
+    {
+      "name": "direction",
+      "description": "up, down, left или right",
+      "type": "enum",
+      "required": true,
+      "allowedValues": ["up", "down", "left", "right"]
+    }
+  ],
+  "riskLevel": "safe",
+  "onlineRequired": false
+}

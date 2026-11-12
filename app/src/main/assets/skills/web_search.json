@@ -1,0 +1,19 @@
+{
+  "id": "web.search",
+  "name": "Поиск в сети",
+  "description": "Открыть поиск в браузере, когда просят найти в интернете.",
+  "examples": [
+    "найди в интернете рецепт борща",
+    "поищи в сети отзывы о пылесосе"
+  ],
+  "parameters": [
+    {
+      "name": "query",
+      "description": "Значение словами пользователя",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

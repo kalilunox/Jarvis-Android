@@ -1,0 +1,28 @@
+{
+  "id": "ui.click",
+  "name": "Клик по экрану",
+  "description": "Находит на текущем экране элемент по тексту или описанию и нажимает. Используй для навигации внутри уже открытого приложения.",
+  "examples": [
+    "нажми на Мама",
+    "тапни Отправить",
+    "выбери Wi-Fi",
+    "найди чат с Аней",
+    "долго нажми вложения"
+  ],
+  "parameters": [
+    {
+      "name": "query",
+      "description": "Текст или описание элемента на экране",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "longPress",
+      "description": "true для долгого нажатия",
+      "type": "boolean",
+      "required": false
+    }
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

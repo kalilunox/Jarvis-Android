@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/widgetRoot" android:background="@drawable/bg_widget_reactor" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widgetCore" android:layout_width="88.0dp" android:layout_height="88.0dp" android:src="@drawable/ic_launcher_fg_full" android:contentDescription="Включить или выключить ассистента" android:layout_marginEnd="10.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="11.0sp" android:textColor="#ecf4ff" android:id="@id/widgetBrand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="J.A.R.V.I.S." android:fontFamily="@font/michroma" android:letterSpacing="0.12" />
+        <TextView android:textSize="12.0sp" android:textColor="#3fe59b" android:ellipsize="end" android:id="@id/widgetStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="Слушает «Джарвис»" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ecf4ff" android:ellipsize="end" android:id="@id/widgetNext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="Напоминаний нет" android:maxLines="1" />
+        <TextView android:textSize="12.0sp" android:textColor="#8fa8c6" android:ellipsize="end" android:id="@id/widgetSub" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/widgetListen" android:background="@drawable/bg_widget_main_reactor" android:layout_width="0.0dp" android:layout_height="32.0dp" android:layout_weight="1.0">
+                <ImageView android:id="@id/widgetMicIcon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_fui_mic" android:contentDescription="Говорить" android:layout_marginEnd="5.0dp" />
+                <TextView android:textSize="12.0sp" android:textColor="#ecf4ff" android:id="@id/widgetListenText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Говорить" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ecf4ff" android:gravity="center" android:id="@id/widgetBrief" android:background="@drawable/bg_widget_btn" android:layout_width="0.0dp" android:layout_height="32.0dp" android:text="Сводка" android:layout_weight="1.0" android:layout_marginStart="6.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

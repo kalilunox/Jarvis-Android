@@ -1,0 +1,22 @@
+{
+  "id": "ui.global",
+  "name": "Системная кнопка",
+  "description": "Нажимает системные кнопки Android: назад, домой, недавние, шторка уведомлений, быстрые настройки.",
+  "examples": [
+    "нажми назад",
+    "выйди на домашний экран",
+    "открой шторку уведомлений",
+    "покажи недавние приложения"
+  ],
+  "parameters": [
+    {
+      "name": "action",
+      "description": "back, home, recents, notifications или quick_settings",
+      "type": "enum",
+      "required": true,
+      "allowedValues": ["back", "home", "recents", "notifications", "quick_settings"]
+    }
+  ],
+  "riskLevel": "safe",
+  "onlineRequired": false
+}

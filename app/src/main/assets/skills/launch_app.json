@@ -1,0 +1,32 @@
+{
+  "id": "app.launch",
+  "name": "Приложения",
+  "description": "Открывает, сворачивает (Home), принудительно останавливает или перечисляет приложения.",
+  "examples": [
+    "открой Telegram",
+    "запусти WhatsApp",
+    "покажи камеру",
+    "открой настройки",
+    "какие приложения установлены",
+    "закрой телеграм",
+    "сверни телеграм",
+    "принудительно закрой Telegram"
+  ],
+  "parameters": [
+    {
+      "name": "action",
+      "description": "open, list, minimize/close или force_stop",
+      "type": "enum",
+      "required": false,
+      "allowedValues": ["open", "list", "minimize", "close", "force_stop"]
+    },
+    {
+      "name": "app",
+      "description": "Название приложения",
+      "type": "string",
+      "required": false
+    }
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

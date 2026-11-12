@@ -1,0 +1,21 @@
+{
+  "id": "knowledge",
+  "name": "Знания",
+  "description": "Краткий факт из Википедии или DuckDuckGo Instant Answer без открытия браузера.",
+  "examples": [
+    "кто такой Пушкин",
+    "что такое нейронная сеть",
+    "расскажи про Марс",
+    "сколько планет в Солнечной системе"
+  ],
+  "parameters": [
+    {
+      "name": "query",
+      "description": "Тема или вопрос",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "riskLevel": "safe",
+  "onlineRequired": true
+}

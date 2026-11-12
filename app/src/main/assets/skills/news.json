@@ -1,0 +1,12 @@
+{
+  "id": "news",
+  "name": "Новости",
+  "description": "Свежие новостные заголовки.",
+  "examples": [
+    "какие новости",
+    "последние новости"
+  ],
+  "parameters": [],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

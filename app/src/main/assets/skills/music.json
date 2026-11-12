@@ -1,0 +1,38 @@
+{
+  "id": "music",
+  "name": "Музыка",
+  "description": "Трек/артист/альбом через Кион или любой плеер (MediaSession / PLAY_FROM_SEARCH); пауза, дальше, статус.",
+  "examples": [
+    "включи песню Bohemian Rhapsody",
+    "включи исполнителя Michael Jackson",
+    "включи альбом Thriller",
+    "включи избранное",
+    "включи скачанное",
+    "поставь на паузу",
+    "продолжить воспроизведение",
+    "следующий трек",
+    "что играет"
+  ],
+  "parameters": [
+    {
+      "name": "action",
+      "description": "play, pause, resume, next, previous, status",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "query",
+      "description": "Трек, артист или альбом",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "scope",
+      "description": "track, artist, album, favorites, downloaded",
+      "type": "string",
+      "required": false
+    }
+  ],
+  "riskLevel": "safe",
+  "onlineRequired": false
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/dashboardRoot" android:background="@color/jarvis_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#07141c" android:paddingTop="12.0dp" android:paddingBottom="10.0dp" android:layout_width="54.0dp" android:layout_height="match_parent">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/jarvis_cyan" android:gravity="center" android:background="@drawable/bg_icon_well" android:layout_width="34.0dp" android:layout_height="34.0dp" android:text="J" android:fontFamily="monospace" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bottomNav" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/jarvis_faint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V2" android:fontFamily="monospace" android:letterSpacing="0.2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/shellTop" android:paddingTop="12.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="14.0dp" android:paddingEnd="12.0dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/jarvis_text" android:id="@id/statusTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ЯДРО" android:textAllCaps="true" android:letterSpacing="0.08" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_green" android:id="@id/topRuntimeState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="ONLINE" android:fontFamily="monospace" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="@color/jarvis_cyan" android:id="@id/shellClock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:fontFamily="monospace" android:layout_marginEnd="8.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/jarvis_cyan" android:gravity="center" android:id="@id/btnAccentCycle" android:background="@drawable/bg_icon_well" android:layout_width="32.0dp" android:layout_height="32.0dp" android:text="◐" />
+        </LinearLayout>
+        <View android:background="@color/jarvis_border" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <FrameLayout android:id="@id/screenContainer" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

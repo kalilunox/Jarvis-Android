@@ -1,0 +1,9 @@
+{
+  "id": "screenshot",
+  "name": "Скриншот",
+  "description": "Делает снимок экрана и сохраняет в Галерею.",
+  "examples": ["сделай скриншот", "сними экран", "скрин"],
+  "parameters": [],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

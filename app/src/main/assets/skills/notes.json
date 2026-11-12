@@ -1,0 +1,12 @@
+{
+  "id": "notes",
+  "name": "Заметки и списки",
+  "description": "Покупки, дела, заметки.",
+  "examples": [
+    "запиши в покупки молоко",
+    "что в списке покупок"
+  ],
+  "parameters": [],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

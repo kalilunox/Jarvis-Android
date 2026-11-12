@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/jarvis_bg" android:padding="28.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/jarvis_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JARVIS" android:letterSpacing="0.18" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/jarvis_text" android:id="@id/placeholderTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="Экран готовится" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/jarvis_muted" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Этот раздел подключится к реальному backend state/use-case после реализации соответствующего vertical slice." />
+</LinearLayout>

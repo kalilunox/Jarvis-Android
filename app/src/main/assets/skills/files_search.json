@@ -1,0 +1,12 @@
+{
+  "id": "files.search",
+  "name": "Файлы",
+  "description": "Ищет фото, видео или файл по имени и открывает или отправляет.",
+  "examples": ["открой фото отпуск", "найди файл отчёт", "поделись видео"],
+  "parameters": [
+    {"name": "query", "description": "Часть имени файла", "type": "string", "required": true},
+    {"name": "action", "description": "open или share", "type": "enum", "required": false, "allowedValues": ["open", "share"]}
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

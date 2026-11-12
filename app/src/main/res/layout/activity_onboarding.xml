@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/jarvis_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/jarvis_primary" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="JARVIS" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/jarvis_muted" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dp" android:text="Офлайн голосовой ассистент" />
+        <com.google.android.material.card.MaterialCardView android:id="@id/stepRecordAudio" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="@color/jarvis_panel" app:strokeColor="@color/jarvis_border" app:strokeWidth="2.0dp" style="@style/Widget.Material3.CardView.Outlined">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/jarvis_text" android:id="@id/stepRecordAudioStatus" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="1. Доступ к микрофону" android:layout_weight="1.0" />
+                <Button android:textColor="@color/jarvis_primary" android:id="@id/btnRecordAudio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Разрешить" style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@id/stepNotifications" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="@color/jarvis_panel" app:strokeColor="@color/jarvis_border" app:strokeWidth="2.0dp" style="@style/Widget.Material3.CardView.Outlined">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/jarvis_text" android:id="@id/stepNotificationsStatus" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="2. Уведомления" android:layout_weight="1.0" />
+                <Button android:textColor="@color/jarvis_primary" android:id="@id/btnNotifications" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Разрешить" style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@id/stepOverlay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="@color/jarvis_panel" app:strokeColor="@color/jarvis_border" app:strokeWidth="2.0dp" style="@style/Widget.Material3.CardView.Outlined">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/jarvis_text" android:id="@id/stepOverlayStatus" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="3. Оверлей поверх приложений" android:layout_weight="1.0" />
+                <Button android:textColor="@color/jarvis_primary" android:id="@id/btnOverlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Настроить" style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@id/stepBattery" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="@color/jarvis_panel" app:strokeColor="@color/jarvis_border" app:strokeWidth="2.0dp" style="@style/Widget.Material3.CardView.Outlined">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/jarvis_text" android:id="@id/stepBatteryStatus" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="4. Исключение из экономии батареи" android:layout_weight="1.0" />
+                <Button android:textColor="@color/jarvis_primary" android:id="@id/btnBattery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Настроить" style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@id/stepAutoStart" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="@color/jarvis_panel" app:strokeColor="@color/jarvis_border" app:strokeWidth="2.0dp" style="@style/Widget.Material3.CardView.Outlined">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/jarvis_text" android:id="@id/stepAutoStartStatus" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="5. Автозапуск (HyperOS)" android:layout_weight="1.0" />
+                <Button android:textColor="@color/jarvis_primary" android:id="@id/btnAutoStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Настроить" style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@id/stepAccessibility" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="@color/jarvis_panel" app:strokeColor="@color/jarvis_border" app:strokeWidth="2.0dp" style="@style/Widget.Material3.CardView.Outlined">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/jarvis_text" android:id="@id/stepAccessibilityStatus" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="6. Accessibility (управление экраном)" android:layout_weight="1.0" />
+                <Button android:textColor="@color/jarvis_primary" android:id="@id/btnAccessibility" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Настроить" style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@id/stepNotificationListener" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="@color/jarvis_panel" app:strokeColor="@color/jarvis_border" app:strokeWidth="2.0dp" style="@style/Widget.Material3.CardView.Outlined">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/jarvis_text" android:id="@id/stepNotificationListenerStatus" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="7. Чтение уведомлений" android:layout_weight="1.0" />
+                <Button android:textColor="@color/jarvis_primary" android:id="@id/btnNotificationListener" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Настроить" style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@id/stepWriteSettings" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="@color/jarvis_panel" app:strokeColor="@color/jarvis_border" app:strokeWidth="2.0dp" style="@style/Widget.Material3.CardView.Outlined">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/jarvis_text" android:id="@id/stepWriteSettingsStatus" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="8. Изменение системных настроек" android:layout_weight="1.0" />
+                <Button android:textColor="@color/jarvis_primary" android:id="@id/btnWriteSettings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Настроить" style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@id/stepDebugConsole" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" app:cardBackgroundColor="@color/jarvis_panel" app:strokeColor="@color/jarvis_border" app:strokeWidth="2.0dp" style="@style/Widget.Material3.CardView.Outlined">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff9800" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="9. Тест-консоль (debug)" android:layout_weight="1.0" />
+                <Button android:textColor="#ff9800" android:id="@id/btnDebugConsole" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Открыть" style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <Button android:enabled="false" android:textSize="16.0sp" android:textColor="#ffffff" android:id="@id/btnStart" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="24.0dp" android:text="Запустить Jarvis" android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

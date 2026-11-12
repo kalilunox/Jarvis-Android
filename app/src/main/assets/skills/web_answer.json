@@ -1,0 +1,11 @@
+{
+  "id": "web.answer",
+  "name": "Ответ из сети",
+  "description": "Свежие сведения из интернета голосом.",
+  "examples": [
+    "узнай кто выиграл матч"
+  ],
+  "parameters": [],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

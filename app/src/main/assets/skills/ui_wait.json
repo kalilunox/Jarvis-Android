@@ -1,0 +1,38 @@
+{
+  "id": "ui.wait",
+  "name": "Ждать узел",
+  "description": "Ждёт появления элемента на экране по тексту, viewId или пакету приложения. Используй после открытия приложения, прежде чем кликать.",
+  "examples": [
+    "подожди пока появится Поиск",
+    "жди кнопку Отправить",
+    "дождись Telegram на экране"
+  ],
+  "parameters": [
+    {
+      "name": "query",
+      "description": "Текст или описание элемента",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "viewId",
+      "description": "Подстрока viewId",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "package",
+      "description": "Подстрока packageName",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "timeoutMs",
+      "description": "Таймаут в миллисекундах",
+      "type": "integer",
+      "required": false
+    }
+  ],
+  "riskLevel": "safe",
+  "onlineRequired": false
+}

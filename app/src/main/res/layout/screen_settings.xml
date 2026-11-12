@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/jarvis_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="8.0dp" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="19.0dp" android:paddingEnd="19.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/jarvis_muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="Тема, персона и локальные модели" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:layout_marginBottom="4.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/tabSettingsMain" android:background="@drawable/bg_fui_active" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Общее" android:layout_weight="1.0" android:layout_marginEnd="4.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/tabSettingsCompanion" android:background="@drawable/bg_hud_panel" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Рядом" android:layout_weight="1.0" android:layout_marginEnd="4.0dp" />
+            <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/tabSettingsModels" android:background="@drawable/bg_hud_panel" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Модели" android:layout_weight="1.0" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/settingsMainPanel" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/jarvis_cyan" android:gravity="center" android:id="@id/btnOpenUsageGuide" android:background="@drawable/bg_hud_panel" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="8.0dp" android:text="Как пользоваться JARVIS (гид)" android:fontFamily="monospace" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/jarvis_primary" android:gravity="center" android:id="@id/btnSwitchModern" android:background="@drawable/bg_hud_panel" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="> СОВРЕМЕННЫЙ ИНТЕРФЕЙС" android:fontFamily="monospace" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_hud_panel" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp">
+                <TextView android:textSize="12.0sp" android:textColor="@color/jarvis_cyan" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Звуковые эффекты HUD" android:layout_weight="1.0" android:fontFamily="monospace" />
+                <com.jarvis.app.JarvisToggle android:id="@id/toggleHudSfx" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="9.0dp" android:text="ТЕМА" android:letterSpacing="0.06" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_hud_panel" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#f4f0e7" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Оформление" android:layout_weight="1.0" />
+                    <TextView android:textSize="9.0sp" android:textColor="#e0ad55" android:id="@id/themeTag" android:background="@drawable/bg_tag_gold" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CLASSIC" android:fontFamily="monospace" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp">
+                    <LinearLayout android:orientation="vertical" android:id="@id/themeClassic" android:background="@drawable/bg_mini_tile_active" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="9.0dp" android:layout_weight="1.0" android:layout_marginEnd="4.0dp">
+                        <TextView android:textSize="9.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="Gold + Cyan" />
+                        <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JARVIS Classic" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/themeArc" android:background="@drawable/bg_mini_tile" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="9.0dp" android:layout_weight="1.0" android:layout_marginStart="4.0dp">
+                        <TextView android:textSize="9.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="Cyan" />
+                        <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Arc Reactor" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/themeStealth" android:background="@drawable/bg_mini_tile" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="4.0dp">
+                        <TextView android:textSize="9.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="Neutral" />
+                        <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stealth" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/themeLight" android:background="@drawable/bg_mini_tile" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="4.0dp">
+                        <TextView android:textSize="9.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="Warm" />
+                        <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Light" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="9.0dp" android:text="ЛИЧНОСТЬ" android:letterSpacing="0.06" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_hud_panel" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp">
+                    <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/personaClassic" android:background="@drawable/bg_fui_active" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:minHeight="36.0dp" android:text="JARVIS Classic" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" android:layout_marginEnd="8.0dp" />
+                    <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/personaFriendly" android:background="@drawable/bg_hud_panel" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:minHeight="36.0dp" android:text="Friendly" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" android:layout_marginEnd="8.0dp" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/personaMinimal" android:background="@drawable/bg_hud_panel" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36.0dp" android:text="Minimal" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" android:layout_marginEnd="8.0dp" />
+                    <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/personaDeveloper" android:background="@drawable/bg_hud_panel" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36.0dp" android:text="Developer" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="9.0dp" android:text="ДИАЛОГ · СКОРОСТЬ / КАЧЕСТВО" android:letterSpacing="0.06" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_hud_panel" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10.0sp" android:textColor="#9da5ae" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="Профиль генерации (низкая temperature = меньше «мусора»)" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp">
+                    <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/chatProfileFast" android:background="@drawable/bg_hud_panel" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:minHeight="36.0dp" android:text="Быстро" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" android:layout_marginEnd="8.0dp" />
+                    <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/chatProfileBalanced" android:background="@drawable/bg_fui_active" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:minHeight="36.0dp" android:text="Баланс" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" android:layout_marginEnd="8.0dp" />
+                    <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/chatProfileQuality" android:background="@drawable/bg_hud_panel" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:minHeight="36.0dp" android:text="Качество" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" />
+                </LinearLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#626b76" android:id="@id/chatProfileHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:text="Баланс: ~3–5 с, ясные ответы без воды." />
+                <TextView android:textSize="10.0sp" android:textColor="#9da5ae" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:text="Облачный LLM · OpenAI-compatible" />
+                <EditText android:textSize="12.0sp" android:textColor="#f4f0e7" android:textColorHint="#626b76" android:id="@id/cloudApiKeyInput" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:hint="API key (sk-nry-…)" android:inputType="textPassword" />
+                <TextView android:textSize="10.0sp" android:textColor="#626b76" android:id="@id/cloudApiKeyHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="Облачный endpoint не задан. Для custom укажите адрес в настройках." />
+                <TextView android:textSize="14.0sp" android:textColor="#9da5ae" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="6.0dp" android:text="@string/cloud_models_title" />
+                <TextView android:textSize="14.0sp" android:textColor="#626b76" android:id="@id/cloudPrivacyHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/cloud_privacy_no_personal_data" />
+                <LinearLayout android:orientation="vertical" android:id="@id/groqKeyBlock" android:background="@drawable/bg_hud_panel" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f4f0e7" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cloud_groq_title" />
+                    <EditText android:textSize="14.0sp" android:textColor="#f4f0e7" android:textColorHint="#626b76" android:id="@id/groqKeyInput" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:hint="@string/cloud_api_key_hint" android:inputType="textPassword" android:contentDescription="@string/cloud_groq_key_description" android:importantForAutofill="no" />
+                    <TextView android:textSize="14.0sp" android:textColor="#626b76" android:id="@id/groqKeyStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/cloud_key_missing" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+                        <Button android:textSize="14.0sp" android:id="@id/groqKeySave" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/cloud_save_key" android:layout_weight="1.0" android:contentDescription="@string/cloud_save_key_description" />
+                        <Button android:textSize="14.0sp" android:id="@id/groqKeyClear" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/cloud_clear_key" android:layout_weight="1.0" android:contentDescription="@string/cloud_clear_key_description" android:layout_marginStart="8.0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/geminiKeyBlock" android:background="@drawable/bg_hud_panel" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f4f0e7" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cloud_gemini_title" />
+                    <EditText android:textSize="14.0sp" android:textColor="#f4f0e7" android:textColorHint="#626b76" android:id="@id/geminiKeyInput" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:hint="@string/cloud_api_key_hint" android:inputType="textPassword" android:contentDescription="@string/cloud_gemini_key_description" android:importantForAutofill="no" />
+                    <TextView android:textSize="14.0sp" android:textColor="#626b76" android:id="@id/geminiKeyStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/cloud_key_missing" />
+                    <TextView android:textSize="14.0sp" android:textColor="#626b76" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/cloud_gemini_free_tier_notice" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+                        <Button android:textSize="14.0sp" android:id="@id/geminiKeySave" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/cloud_save_key" android:layout_weight="1.0" android:contentDescription="@string/cloud_save_key_description" />
+                        <Button android:textSize="14.0sp" android:id="@id/geminiKeyClear" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/cloud_clear_key" android:layout_weight="1.0" android:contentDescription="@string/cloud_clear_key_description" android:layout_marginStart="8.0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="10.0sp" android:textColor="#9da5ae" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="6.0dp" android:text="Распознавание речи (ASR)" />
+                <Spinner android:id="@id/asrModeSpinner" android:background="@drawable/bg_hud_panel" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" />
+                <TextView android:textSize="10.0sp" android:textColor="#626b76" android:id="@id/asrModeHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:text="Auto · Cloud preferred · Local only" />
+                <EditText android:textSize="12.0sp" android:textColor="#f4f0e7" android:textColorHint="#626b76" android:id="@id/asrCloudBaseUrlInput" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:hint="Whisper base URL (опц. https://api.openai.com/v1)" android:inputType="textUri" />
+                <EditText android:textSize="12.0sp" android:textColor="#f4f0e7" android:textColorHint="#626b76" android:id="@id/asrCloudApiKeyInput" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:hint="Whisper API key (опц., иначе Android Speech)" android:inputType="textPassword" />
+                <TextView android:textSize="10.0sp" android:textColor="#9da5ae" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="6.0dp" android:text="Синтез речи (TTS)" />
+                <Spinner android:id="@id/ttsModeSpinner" android:background="@drawable/bg_hud_panel" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" />
+                <TextView android:textSize="10.0sp" android:textColor="#626b76" android:id="@id/ttsModeHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:text="Auto · Cloud preferred · Local only" />
+                <EditText android:textSize="12.0sp" android:textColor="#f4f0e7" android:textColorHint="#626b76" android:id="@id/ttsCloudBaseUrlInput" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:hint="Speech base URL (опц. https://api.openai.com/v1)" android:inputType="textUri" />
+                <EditText android:textSize="12.0sp" android:textColor="#f4f0e7" android:textColorHint="#626b76" android:id="@id/ttsCloudApiKeyInput" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:hint="Speech API key (опц., иначе Android TTS)" android:inputType="textPassword" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="4.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="13.0sp" android:textColor="#f4f0e7" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Предпочитать облако" />
+                        <TextView android:textSize="10.0sp" android:textColor="#626b76" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Online + ключ → облако; иначе Local" />
+                    </LinearLayout>
+                    <com.jarvis.app.JarvisToggle android:id="@id/togglePreferCloud" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#2b333d" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginBottom="8.0dp" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Предзагрузка в RAM" />
+                        <TextView android:textSize="10.0sp" android:textColor="#9da5ae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="Модель готова до первой фразы" />
+                    </LinearLayout>
+                    <com.jarvis.app.JarvisToggle android:id="@id/toggleChatPreload" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="9.0dp" android:text="ПРОСЛУШИВАНИЕ" android:letterSpacing="0.06" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_hud_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <LinearLayout android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Adaptive Listening" android:layout_weight="1.0" />
+                        <com.jarvis.app.JarvisToggle android:id="@id/toggleAdaptive" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#2b333d" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                <LinearLayout android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Low Power при &lt;20%" android:layout_weight="1.0" />
+                        <com.jarvis.app.JarvisToggle android:id="@id/toggleLowPower" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="9.0dp" android:text="БЕЗОПАСНОСТЬ" android:letterSpacing="0.06" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_hud_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <LinearLayout android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Подтверждение sensitive actions" />
+                            <TextView android:textSize="10.0sp" android:textColor="#9da5ae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="SMS · calls · delete" />
+                        </LinearLayout>
+                        <com.jarvis.app.JarvisToggle android:id="@id/toggleSensitive" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#2b333d" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Шифрование данных" android:layout_weight="1.0" />
+                    <TextView android:textSize="9.0sp" android:textColor="#62d9df" android:background="@drawable/bg_tag_cyan" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ON" android:fontFamily="monospace" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="9.0dp" android:text="ИИ · PARAMETERS" android:letterSpacing="0.06" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_hud_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Вейк-ворд" />
+                        <TextView android:textSize="10.0sp" android:textColor="#9da5ae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="«джарвис» перед командой" />
+                    </LinearLayout>
+                    <com.jarvis.app.JarvisToggle android:id="@id/toggleWake" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#2b333d" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                <LinearLayout android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="10.0sp" android:textColor="#9da5ae" android:id="@id/wakeEngineStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="Движок: openWakeWord · «Джарвис» (tflite KWS)" />
+                    <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="Чувствительность вейк-ворда" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/wakeLow" android:background="@drawable/bg_fui_active" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Низкая" android:layout_weight="1.0" android:layout_marginEnd="4.0dp" />
+                        <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/wakeMedium" android:background="@drawable/bg_hud_panel" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Средняя" android:layout_weight="1.0" android:layout_marginEnd="4.0dp" />
+                        <TextView android:textSize="11.0sp" android:textColor="#f4f0e7" android:gravity="center" android:id="@id/wakeHigh" android:background="@drawable/bg_hud_panel" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Высокая" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#2b333d" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                <LinearLayout android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:text="Порог уверенности Брейна" />
+                    <TextView android:textSize="16.0sp" android:textColor="#e0ad55" android:id="@id/brainThreshold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:text="0.60" android:fontFamily="monospace" />
+                    <com.jarvis.app.JarvisSlider android:id="@id/sliderThreshold" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="9.0dp" android:text="ПАМЯТЬ" android:letterSpacing="0.06" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_hud_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Запоминать факты о пользователе" />
+                        <TextView android:textSize="10.0sp" android:textColor="#9da5ae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="Долгосрочная память (local SQLite)" />
+                    </LinearLayout>
+                    <com.jarvis.app.JarvisToggle android:id="@id/toggleMemory" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#2b333d" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#f4f0e7" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Сохранено фактов" android:layout_weight="1.0" />
+                    <TextView android:textSize="11.0sp" android:textColor="#62d9df" android:id="@id/memoryCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="monospace" android:layout_marginEnd="12.0dp" />
+                    <Button android:textSize="11.0sp" android:textColor="#f4f0e7" android:id="@id/btnClearMemory" android:background="@drawable/bg_end_capsule" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dp" android:text="Очистить" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#626b76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="9.0dp" android:text="СИСТЕМА" android:letterSpacing="0.06" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_hud_panel" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#f4f0e7" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Diagnostics" android:layout_weight="1.0" />
+                    <TextView android:textSize="9.0sp" android:textColor="#62d9df" android:background="@drawable/bg_tag_cyan" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HEALTHY" android:fontFamily="monospace" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#9da5ae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="ASR · TTS · Wake · LLM · Tools" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/screen_companion_panel" />
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/screen_models_panel" />
+    </LinearLayout>
+</ScrollView>

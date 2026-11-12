@@ -1,0 +1,12 @@
+{
+  "id": "rates",
+  "name": "Курсы валют",
+  "description": "Курс доллара, евро и юаня в рублях.",
+  "examples": [
+    "курс доллара",
+    "почём евро"
+  ],
+  "parameters": [],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

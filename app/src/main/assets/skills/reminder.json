@@ -1,0 +1,12 @@
+{
+  "id": "reminder.set",
+  "name": "Напоминание",
+  "description": "Напоминание с текстом на конкретное время: поставить, показать список, отменить. Используй, когда просят напомнить о чём-то завтра, в определённый час или каждый день.",
+  "examples": ["напомни завтра в девять позвонить маме", "какие у меня напоминания", "отмени напоминание"],
+  "parameters": [
+    {"name": "phrase", "description": "Что и когда напомнить, словами пользователя", "type": "string", "required": false},
+    {"name": "action", "description": "add, list или cancel", "type": "string", "required": false}
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

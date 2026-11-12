@@ -1,0 +1,12 @@
+{
+  "id": "app.action",
+  "name": "Действие в приложении",
+  "description": "Поиск на ютубе и в картах, такси, сайт.",
+  "examples": [
+    "включи на ютубе обзор",
+    "вызови такси"
+  ],
+  "parameters": [],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

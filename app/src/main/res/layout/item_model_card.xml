@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_hud_panel" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#f4f0e7" android:id="@id/modelTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Model" />
+            <TextView android:textSize="10.0sp" android:textColor="#9da5ae" android:id="@id/modelSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="subtitle" />
+        </LinearLayout>
+        <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_cyan" android:id="@id/modelStatus" android:background="@drawable/bg_tag_cyan" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MISSING" android:fontFamily="monospace" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/modelProgress" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:max="100" android:progress="0" android:progressTint="@color/jarvis_cyan" android:progressBackgroundTint="#1a334455" style="?android:progressBarStyleHorizontal" />
+    <TextView android:textSize="10.0sp" android:textColor="#626b76" android:id="@id/modelMessage" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <Button android:textSize="11.0sp" android:textColor="@color/jarvis_cyan" android:id="@id/btnModelDelete" android:background="@drawable/bg_hud_panel" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dp" android:text="Удалить" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" android:layout_marginEnd="8.0dp" android:backgroundTint="@null" />
+        <Button android:textSize="11.0sp" android:textColor="@color/jarvis_cyan" android:id="@id/btnModelAction" android:background="@drawable/bg_fui_active" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dp" android:text="Скачать" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" android:backgroundTint="@null" />
+    </LinearLayout>
+</LinearLayout>

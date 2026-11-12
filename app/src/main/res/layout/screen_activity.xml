@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/jarvis_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="150.0dp">
+            <com.jarvis.app.GaugeView android:id="@id/gaugeCpu" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.jarvis.app.GaugeView android:id="@id/gaugeRam" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.jarvis.app.GaugeView android:id="@id/gaugeBattery" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_faint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="НАГРУЗКА" android:fontFamily="monospace" />
+        <com.jarvis.app.TelemetryChartView android:id="@id/systemChart" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="110.0dp" android:layout_marginTop="4.0dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_text" android:gravity="center" android:id="@id/latAsr" android:background="@drawable/bg_hud_panel" android:padding="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="ASR\n—" android:layout_weight="1.0" android:fontFamily="monospace" android:layout_marginEnd="3.0dp" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_text" android:gravity="center" android:id="@id/latRouter" android:background="@drawable/bg_hud_panel" android:padding="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="ROUTER\n—" android:layout_weight="1.0" android:fontFamily="monospace" android:layout_marginEnd="3.0dp" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_text" android:gravity="center" android:id="@id/latLlm" android:background="@drawable/bg_hud_panel" android:padding="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="LLM\n—" android:layout_weight="1.0" android:fontFamily="monospace" android:layout_marginEnd="3.0dp" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_text" android:gravity="center" android:id="@id/latTts" android:background="@drawable/bg_hud_panel" android:padding="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="TTS\n—" android:layout_weight="1.0" android:fontFamily="monospace" />
+        </LinearLayout>
+        <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_faint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="СЛУЖБЫ" android:fontFamily="monospace" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_text" android:id="@id/svcVoice" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="● VOICE\nIDLE" android:layout_weight="1.0" android:fontFamily="monospace" android:layout_marginEnd="6.0dp" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_text" android:id="@id/svcWake" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="● WAKE\nARMED" android:layout_weight="1.0" android:fontFamily="monospace" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_text" android:id="@id/svcRouter" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="● ROUTER\nHYBRID" android:layout_weight="1.0" android:fontFamily="monospace" android:layout_marginEnd="6.0dp" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_text" android:id="@id/svcPipeline" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="● ASR / TTS\nAUTO" android:layout_weight="1.0" android:fontFamily="monospace" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_text" android:id="@id/svcNext" android:background="@drawable/bg_hud_panel" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="● NEXT\n—" android:layout_weight="2.0" android:fontFamily="monospace" android:layout_marginEnd="6.0dp" />
+        </LinearLayout>
+        <TextView android:id="@id/systemServices" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/jarvis_cyan" android:gravity="center" android:id="@id/btnOpenTestConsole" android:background="@drawable/bg_hud_panel" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="▶  ЗАПУСТИТЬ ДИАГНОСТИКУ" android:fontFamily="monospace" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_faint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EVENTS " android:fontFamily="monospace" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/jarvis_text" android:id="@id/journalRequests" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="monospace" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/jarvis_faint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="   FAILED " android:fontFamily="monospace" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/jarvis_danger" android:id="@id/journalFailed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="monospace" />
+            <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_cyan" android:id="@id/activitySearch" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ПОИСК" android:fontFamily="monospace" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_muted" android:id="@id/btnClearActivity" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="СБРОС" android:fontFamily="monospace" />
+        </LinearLayout>
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_cyan" android:id="@id/actChipAll" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ВСЕ" android:fontFamily="monospace" />
+                <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_muted" android:id="@id/actChipVoice" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ГОЛОС" android:fontFamily="monospace" />
+                <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_muted" android:id="@id/actChipTools" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TOOLS" android:fontFamily="monospace" />
+                <TextView android:textSize="9.0sp" android:textColor="@color/jarvis_muted" android:id="@id/actChipConfirm" android:padding="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CHECK" android:fontFamily="monospace" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/activityFeedContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+    </LinearLayout>
+</ScrollView>

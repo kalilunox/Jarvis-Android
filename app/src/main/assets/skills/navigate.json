@@ -1,0 +1,20 @@
+{
+  "id": "navigate",
+  "name": "Навигация",
+  "description": "Проложить маршрут или показать место на карте.",
+  "examples": [
+    "проложи маршрут до работы",
+    "как доехать до вокзала",
+    "покажи на карте аптеку"
+  ],
+  "parameters": [
+    {
+      "name": "destination",
+      "description": "Значение словами пользователя",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

@@ -1,0 +1,11 @@
+{
+  "id": "contacts.search",
+  "name": "Контакты",
+  "description": "Ищет контакт в телефонной книге и сообщает номер.",
+  "examples": ["найди контакт мама", "какой номер у Ани", "найди Иванова"],
+  "parameters": [
+    {"name": "query", "description": "Имя контакта", "type": "string", "required": true}
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

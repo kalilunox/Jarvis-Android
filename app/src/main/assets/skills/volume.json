@@ -1,0 +1,31 @@
+{
+  "id": "media.volume",
+  "name": "Громкость",
+  "description": "Изменяет громкость мультимедиа или звонка. Используй, когда пользователь просит сделать громче, тише, прибавить/убавить звук, включить/выключить звук.",
+  "examples": [
+    "сделай громче",
+    "тише",
+    "прибавь звук",
+    "убавь громкость наполовину",
+    "выключи звук",
+    "максимальная громкость",
+    "сделай потише"
+  ],
+  "parameters": [
+    {
+      "name": "direction",
+      "description": "up — громче, down — тише, mute — выключить звук, unmute — включить звук, max — максимальная",
+      "type": "enum",
+      "required": true,
+      "allowedValues": ["up", "down", "mute", "unmute", "max", "set"]
+    },
+    {
+      "name": "percent",
+      "description": "целевой уровень громкости в процентах (0-100) для direction=set",
+      "type": "integer",
+      "required": false
+    }
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

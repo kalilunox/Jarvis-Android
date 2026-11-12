@@ -1,0 +1,21 @@
+{
+  "id": "weather",
+  "name": "Погода",
+  "description": "Текущая погода по городу или геолокации через Open-Meteo. Без браузера.",
+  "examples": [
+    "какая погода",
+    "погода в Москве",
+    "сколько градусов на улице",
+    "будет ли дождь"
+  ],
+  "parameters": [
+    {
+      "name": "city",
+      "description": "Город",
+      "type": "string",
+      "required": false
+    }
+  ],
+  "riskLevel": "safe",
+  "onlineRequired": true
+}

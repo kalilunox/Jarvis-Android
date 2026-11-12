@@ -1,0 +1,13 @@
+{
+  "id": "notifications.list",
+  "name": "Уведомления",
+  "description": "Читает активные уведомления, может закрыть или выполнить действие.",
+  "examples": ["что в уведомлениях", "прочитай уведомления", "закрой уведомление"],
+  "parameters": [
+    {"name": "action", "description": "list или dismiss", "type": "enum", "required": false, "allowedValues": ["list", "dismiss", "reply_action"]},
+    {"name": "query", "description": "Фильтр по тексту", "type": "string", "required": false},
+    {"name": "key", "description": "Ключ уведомления", "type": "string", "required": false}
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

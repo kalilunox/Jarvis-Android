@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+        <intent>
+            <action android:name="android.settings.WIFI_SETTINGS"/>
+        </intent>
+        <package android:name="ru.mts.music.android"/>
+        <package android:name="com.uma.musicvk"/>
+        <package android:name="com.spotify.music"/>
+        <package android:name="ru.yandex.music"/>
+        <package android:name="com.google.android.apps.youtube.music"/>
+        <package android:name="com.soundcloud.android"/>
+        <package android:name="ua.itaysonlab.vkx"/>
+        <package android:name="com.vkontakte.android"/>
+        <package android:name="com.google.android.youtube"/>
+    </queries>
+    <permission android:name="com.jarvis.assistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.jarvis.assistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.jarvis.app.JarvisApplication" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.Jarvis">
+        <activity android:exported="false" android:label="Jarvis Debug Console" android:name="com.jarvis.app.TestConsoleActivity" android:theme="@style/Theme.Jarvis"/>
+        <receiver android:exported="true" android:name="com.jarvis.app.DebugCommandReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.DEBUG_COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.DEBUG_VOICE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.ASR_TEST"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.DEBUG_AUTONOMY"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.DEBUG_SETTINGS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.DEBUG_SANITIZE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.DEBUG_CONTEXT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.DEBUG_MEMORY"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.DEBUG_KEYS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.DEBUG_KEYS_SET"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jarvis.assistant.DEBUG_KEYS_CLEAR"/>
+            </intent-filter>
+        </receiver>
+        <uses-native-library android:name="libvndksupport.so" android:required="false"/>
+        <uses-native-library android:name="libOpenCL.so" android:required="false"/>
+        <activity android:exported="true" android:name="com.jarvis.app.OnboardingActivity" android:theme="@style/Theme.Jarvis"/>
+        <activity android:exported="false" android:name="com.jarvis.app.UsageGuideActivity" android:theme="@style/Theme.Jarvis"/>
+        <activity android:exported="false" android:name="com.jarvis.app.InterfaceChoiceActivity" android:theme="@style/Theme.Jarvis"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.jarvis.app.DashboardActivity" android:theme="@style/Theme.Jarvis"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.jarvis.app.ui.JarvisActivity" android:theme="@style/Theme.Jarvis" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:foregroundServiceType="microphone" android:name="com.jarvis.app.VoiceService"/>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.jarvis.app.OverlayOrbService">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Floating assistant orb drawn over other apps"/>
+        </service>
+        <service android:exported="true" android:icon="@drawable/ic_fui_orb" android:label="J.A.R.V.I.S." android:name="com.jarvis.app.JarvisTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:label="@string/app_name" android:name="com.jarvis.app.assist.JarvisVoiceInteractionService" android:permission="android.permission.BIND_VOICE_INTERACTION">
+            <intent-filter>
+                <action android:name="android.service.voice.VoiceInteractionService"/>
+            </intent-filter>
+            <meta-data android:name="android.voice_interaction" android:resource="@xml/voice_interaction_service"/>
+        </service>
+        <service android:exported="true" android:name="com.jarvis.app.assist.JarvisVoiceInteractionSessionService" android:permission="android.permission.BIND_VOICE_INTERACTION"/>
+        <service android:exported="true" android:name="com.jarvis.app.assist.JarvisRecognitionService" android:permission="android.permission.BIND_RECOGNITION_SERVICE">
+            <intent-filter>
+                <action android:name="android.speech.RecognitionService"/>
+            </intent-filter>
+            <meta-data android:name="android.speech" android:resource="@xml/recognition_service"/>
+        </service>
+        <receiver android:exported="false" android:name="com.jarvis.app.VoiceBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:label="Jarvis" android:name="com.jarvis.app.JarvisWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_jarvis_info"/>
+        </receiver>
+        <receiver android:exported="true" android:label="Jarvis: ядро" android:name="com.jarvis.app.JarvisWidgetSquare">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_jarvis_square_info"/>
+        </receiver>
+        <receiver android:exported="true" android:label="Jarvis: полоска" android:name="com.jarvis.app.JarvisWidgetStrip">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_jarvis_strip_info"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.jarvis.app.ReminderReceiver"/>
+        <receiver android:exported="false" android:name="com.jarvis.app.proactive.ProactiveActionReceiver"/>
+        <service android:exported="true" android:label="@string/accessibility_service_summary" android:name="com.jarvis.screencontrol.JarvisAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility_service_config"/>
+        </service>
+        <service android:exported="true" android:label="@string/notification_listener_description" android:name="com.jarvis.screencontrol.JarvisNotificationListenerService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.jarvis.assistant.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <provider android:authorities="com.jarvis.assistant.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.jarvis.assistant.onnxruntime_telemetry_initializer" android:exported="false" android:initOrder="100" android:name="ai.onnxruntime.TelemetryInitializer"/>
+    </application>
+</manifest>

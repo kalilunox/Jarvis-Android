@@ -1,0 +1,12 @@
+{
+  "id": "system.setting",
+  "name": "Системная настройка",
+  "description": "Управляет Wi-Fi, Bluetooth или режимом полёта; открывает экран настроек.",
+  "examples": ["включи вайфай", "открой bluetooth", "режим полёта", "выключи wifi"],
+  "parameters": [
+    {"name": "name", "description": "wifi, bluetooth или airplane", "type": "enum", "required": true, "allowedValues": ["wifi", "bluetooth", "airplane"]},
+    {"name": "value", "description": "on, off или open", "type": "enum", "required": false, "allowedValues": ["on", "off", "open"]}
+  ],
+  "riskLevel": "low",
+  "onlineRequired": false
+}

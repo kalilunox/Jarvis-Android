@@ -1,0 +1,11 @@
+{
+  "id": "phone.call",
+  "name": "Звонок",
+  "description": "Звонит контакту или по номеру телефона.",
+  "examples": ["позвони маме", "набери +7999", "позвони Ивану"],
+  "parameters": [
+    {"name": "contact", "description": "Имя контакта или номер", "type": "string", "required": true}
+  ],
+  "riskLevel": "confirm",
+  "onlineRequired": false
+}
